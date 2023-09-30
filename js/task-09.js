@@ -18,7 +18,7 @@ button.addEventListener('click', handlerClick);
 function handlerClick() {
   let randomColor = getRandomHexColor();
 
-  body.style.backgroundColor = `${randomColor}`;
+  body.style.backgroundColor = randomColor;
  
   colorValue.textContent = randomColor;
 }

@@ -13,7 +13,7 @@ function handlerInput(event) {
    userName = event.currentTarget.value;
     // console.log('username:', userName)
     
-        if (event.currentTarget.value === '') {
+        if (event.currentTarget.value.trim() === '') {
             outputName.textContent = 'Anonymous';
         } else {
          outputName.textContent = userName;
